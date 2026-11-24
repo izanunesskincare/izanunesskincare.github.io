@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iza Nunes | Skincare</title>
+<meta name="description" content="Skincare, autocuidado e beleza com review sincero. Os achados que a Iza usa e indica.">
+<style>
+  :root {
+    --fundo: #f6efec;
+    --texto: #2b2222;
+    --suave: #7a6a6a;
+    --rosa: #cf5aa0;
+    --botao: #ffffff;
+    --borda: #ead9d4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #1d1718;
+      --texto: #f6efec;
+      --suave: #bfaeae;
+      --botao: #2a2223;
+      --borda: #3a2f30;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: Futura, "Century Gothic", "Avenir Next", system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px 32px;
+    min-height: 100vh;
+  }
+  main { width: 100%; max-width: 440px; text-align: center; }
+  .foto {
+    width: 104px; height: 104px; border-radius: 50%;
+    object-fit: cover; border: 3px solid var(--rosa);
+  }
+  h1 { font-size: 30px; letter-spacing: 1px; margin: 16px 0 2px; text-transform: uppercase; }
+  .sub { font-family: Didot, "Bodoni 72", Georgia, serif; font-style: italic; font-size: 20px; color: var(--suave); margin: 0 0 6px; }
+  .bio { color: var(--suave); font-size: 15px; margin: 0 0 28px; }
+  a.botao {
+    display: block; text-decoration: none; color: var(--texto);
+    background: var(--botao); border: 1px solid var(--borda);
+    border-radius: 16px; padding: 16px 18px; margin: 0 0 12px;
+    font-size: 17px; font-weight: 600;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  a.botao:hover, a.botao:focus { transform: translateY(-2px); border-color: var(--rosa); outline: none; }
+  a.destaque { background: var(--rosa); border-color: var(--rosa); color: #fff; }
+  a.botao small { display: block; font-weight: 400; font-size: 13px; opacity: .8; margin-top: 3px; }
+  .redes { margin: 22px 0 0; font-size: 15px; }
+  .redes a { color: var(--texto); margin: 0 10px; }
+  footer { margin-top: 28px; font-size: 12px; color: var(--suave); line-height: 1.5; }
+</style>
+</head>
+<body>
+<main>
+  <img class="foto" src="foto.jpg" alt="Iza Nunes" onerror="this.style.display='none'">
+  <h1>Iza Nunes</h1>
+  <p class="sub">skincare</p>
+  <p class="bio">Skincare • autocuidado • beleza<br>Com review sincero ✨</p>
+
+  <a class="botao destaque" href="https://whatsapp.com/channel/0029VbEYVYF3LdQcNWQCnG22">
+    🔔 Canal de achados no WhatsApp
+    <small>Ofertas e achados que eu testo, todo dia</small>
+  </a>
+
+  <!-- Achados da Shopee: um bloco <a> por produto, com o link de afiliado gerado no app da Shopee.
+  <a class="botao" href="LINK_SHOPEE">
+    Nome do produto
+    <small>Por que eu indico, em uma frase</small>
+  </a>
+  -->
+
+  <a class="botao" href="https://www.tiktok.com/@izasnunes">
+    TikTok @izasnunes
+    <small>Vídeos e a minha Vitrine do TikTok Shop</small>
+  </a>
+
+  <p class="redes"><a href="https://www.instagram.com/izasnunes/">Instagram</a></p>
+
+  <footer>
+    Links de afiliado #publi: se você comprar por eles, eu ganho uma comissão e você não paga nada a mais. Preço e frete podem mudar na loja.
+  </footer>
+</main>
+</body>
+</html>
